@@ -72,10 +72,9 @@ function startBtnChangeColor() {
   }
   refs.startBtn.classList.add('active');
   intervalId = setInterval(() => {
-    (refs.body.style.backgroundColor =
-      colors[randomIntegerFromInterval(0, colors.length - 1)]),
-      1000;
-  });
+    refs.body.style.backgroundColor =
+      colors[randomIntegerFromInterval(0, colors.length - 1)];
+  }, 1000);
 }
 
 function stopBtnOffChangeColor() {
